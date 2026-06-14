@@ -127,9 +127,8 @@ export default function SongSelector({ onSongFinished }) {
         </div>
       ) : (
         <div className="liquid-glass w-full p-6 border border-white/5 flex flex-col items-center text-center">
-          <audio
+                  <audio
             ref={audioRef}
-            src={song.file} // wait, this was songs list, we reference selectedSong.file!
             src={selectedSong.file}
             onTimeUpdate={handleTimeUpdate}
             onLoadedMetadata={handleLoadedMetadata}
